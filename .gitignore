@@ -509,5 +509,5 @@ About
 
 # augustinasn:
 
-/data
-/tmp
+/data/*
+/tmp/*
