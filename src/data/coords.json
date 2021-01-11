@@ -1,0 +1,1227 @@
+{
+    "1001": {
+        "long": "25,286866",
+        "lat": "54,698668",
+        "street": "Rinktinės - Kazliškių"
+    },
+    "1002": {
+        "long": "25,300914",
+        "lat": "54,697964",
+        "street": "Žirmūnų pėsč. ties IKI"
+    },
+    "1003": {
+        "long": "25,308601",
+        "lat": "54,685154",
+        "street": "Olandų - Filaretų"
+    },
+    "1004": {
+        "long": "25,301221",
+        "lat": "54,677212",
+        "street": "Subačiaus g. (pesčiųjų perėja)"
+    },
+    "1005": {
+        "long": "25,311172",
+        "lat": "54,678638",
+        "street": "Zarasų - Paplaujos"
+    },
+    "1006": {
+        "long": "25,296727",
+        "lat": "54,668123",
+        "street": "Liepkalnio g. (prie Liepkalnio pagr.)"
+    },
+    "1007": {
+        "long": "25,305334",
+        "lat": "54,666663",
+        "street": "Rasų - Sukilėlių - Ribiškių"
+    },
+    "1008": {
+        "long": "25,301479",
+        "lat": "54,662176",
+        "street": "Dunojaus - Liepkalnio - Dzūkų"
+    },
+    "1009": {
+        "long": "25,302938",
+        "lat": "54,654299",
+        "street": "Liepkalnio - Žirnių"
+    },
+    "101": {
+        "long": "25,27987",
+        "lat": "54,690814",
+        "street": "Žygimantų - Goštauto - Vilniaus"
+    },
+    "1010": {
+        "long": "25,315942",
+        "lat": "54,704261",
+        "street": "Šilo - Grybo"
+    },
+    "1011": {
+        "long": "25,305317",
+        "lat": "54,716268",
+        "street": "Žirmūnų 67 \"LIDL\""
+    },
+    "1013": {
+        "long": "25,396751",
+        "lat": "54,695051",
+        "street": "Šiaurės - Kojelavičiaus"
+    },
+    "1014": {
+        "long": "25,280069",
+        "lat": "54,727511",
+        "street": "Kalvarijų - Didlaukio"
+    },
+    "1015": {
+        "long": "25,273916",
+        "lat": "54,729067",
+        "street": "Didlaukio (ties Baltupio mok.)"
+    },
+    "1016": {
+        "long": "25,267767",
+        "lat": "54,728988",
+        "street": "Geležinio Vilko - Didlaukio"
+    },
+    "1017": {
+        "long": "25,25756",
+        "lat": "54,718347",
+        "street": "Gelvonų (ties \"Gelvonu\")"
+    },
+    "1018": {
+        "long": "25,257777",
+        "lat": "54,716194",
+        "street": "Gelvonų - Paberžės"
+    },
+    "1019": {
+        "long": "25,251314",
+        "lat": "54,715715",
+        "street": "Šeskinės - Paberžės"
+    },
+    "102": {
+        "long": "25,276525",
+        "lat": "54,691038",
+        "street": "Goštauto - Vienuolio, Goštauto - Jakšto"
+    },
+    "1020": {
+        "long": "25,253939",
+        "lat": "54,723355",
+        "street": "Stanevičiaus (ties \"Jovaras\")"
+    },
+    "1021": {
+        "long": "25,237707",
+        "lat": "54,713592",
+        "street": "Buivydiskių (pesčiųjų perėja)"
+    },
+    "1023": {
+        "long": "25,231166",
+        "lat": "54,731669",
+        "street": "Pasilaičių g. (pesčiųjų perėja)"
+    },
+    "1024": {
+        "long": "25,2342",
+        "lat": "54,734383",
+        "street": "Ukmergės g. (ties Gedvydžių g.)"
+    },
+    "1026": {
+        "long": "25,214767",
+        "lat": "54,693234",
+        "street": "Asanavičiūtės - \"Kometa\""
+    },
+    "1027": {
+        "long": "25,20776",
+        "lat": "54,688141",
+        "street": "Asanavičiūtės - Maciulevičiaus - Sausio 13"
+    },
+    "1028": {
+        "long": "25,201604",
+        "lat": "54,677734",
+        "street": "Architektų g. (pesčiųjų perėja)"
+    },
+    "1029": {
+        "long": "25,201466",
+        "lat": "54,673989",
+        "street": "Architektų - Erfurto"
+    },
+    "103": {
+        "long": "25,27341",
+        "lat": "54,691588",
+        "street": "Goštauto - Vasario 16-osios"
+    },
+    "1030": {
+        "long": "25,266884",
+        "lat": "54,63757",
+        "street": "Metalo - Geologų"
+    },
+    "1032": {
+        "long": "25,151623",
+        "lat": "54,632708",
+        "street": "Galvės - Kirtimų"
+    },
+    "1033": {
+        "long": "25,198101",
+        "lat": "54,670126",
+        "street": "Lazdynėlių - Šiltnamių"
+    },
+    "1035": {
+        "long": "25,280523",
+        "lat": "54,754885",
+        "street": "Santariškių g. prie Vaikų ligoninės"
+    },
+    "1036": {
+        "long": "25,265404",
+        "lat": "54,646094",
+        "street": "Metalo - Eišiškių"
+    },
+    "1037": {
+        "long": "25,187446",
+        "lat": "54,709016",
+        "street": "Pilaitės - Papilenų"
+    },
+    "1038": {
+        "long": "25,271736",
+        "lat": "54,764842",
+        "street": "Moletų - Skersinės"
+    },
+    "1039": {
+        "long": "25,33767",
+        "lat": "54,734374",
+        "street": "Nemencinės - Svajonių"
+    },
+    "104": {
+        "long": "25,271703",
+        "lat": "54,692274",
+        "street": "Goštauto - Tumo Vaižganto"
+    },
+    "1040": {
+        "long": "25,232252",
+        "lat": "54,737552",
+        "street": "S.Nėries - Ukmergės"
+    },
+    "1041": {
+        "long": "25,256519",
+        "lat": "54,672012",
+        "street": "Žemaitės ties \"LIDL\""
+    },
+    "1042": {
+        "long": "25,338395",
+        "lat": "54,723848",
+        "street": "Saulėtekio al. - Šatrijos Raganos g."
+    },
+    "1043": {
+        "long": "25,268313",
+        "lat": "54,649583",
+        "street": "Eišiškiu ties Vį \"Oro navigacija\""
+    },
+    "1044": {
+        "long": "25,218663",
+        "lat": "54,729209",
+        "street": "Justiniškių - Virbeliškių"
+    },
+    "1045": {
+        "long": "25,220238",
+        "lat": "54,744975",
+        "street": "Ukmergės - M.Lietuvio"
+    },
+    "1046": {
+        "long": "25,208658",
+        "lat": "54,735621",
+        "street": "Pavilnionių"
+    },
+    "1047": {
+        "long": "25,25582",
+        "lat": "54,721152",
+        "street": "Stanevičiaus 2a"
+    },
+    "1048": {
+        "long": "25,298654",
+        "lat": "54,711322",
+        "street": "Lukšio - Kubiliaus"
+    },
+    "1049": {
+        "long": "25,298311",
+        "lat": "54,673755",
+        "street": "Drujos - Rasų"
+    },
+    "105": {
+        "long": "25,270295",
+        "lat": "54,691222",
+        "street": "Goštauto - Lukiškių"
+    },
+    "1050": {
+        "long": "25,20469",
+        "lat": "54,701489",
+        "street": "Pilaitės - Sidaronių"
+    },
+    "1051": {
+        "long": "25,211108",
+        "lat": "54,646847",
+        "street": "Savanorių - Sausupio"
+    },
+    "1052": {
+        "long": "25,214202",
+        "lat": "54,718801",
+        "street": "Rygos - Taikos (\"IKI\")"
+    },
+    "1053": {
+        "long": "25,182086",
+        "lat": "54,710149",
+        "street": "Pilaitės - Įsruties"
+    },
+    "1055": {
+        "long": "25,269276",
+        "lat": "54,753304",
+        "street": "G.Vilko - Moletų - Mokslininkų"
+    },
+    "1056": {
+        "long": "25,271231",
+        "lat": "54,75293",
+        "street": "Baltupio - Mokslininkų"
+    },
+    "1057": {
+        "long": "25,276521",
+        "lat": "54,750791",
+        "street": "Mokslininkų g. perėja"
+    },
+    "1058": {
+        "long": "25,264223",
+        "lat": "54,668222",
+        "street": "Panerių g. perėja"
+    },
+    "1059": {
+        "long": "25,253751",
+        "lat": "54,667111",
+        "street": "Naugarduko - Burbiškių"
+    },
+    "106": {
+        "long": "25,268673",
+        "lat": "54,688986",
+        "street": "Gedimino pr. - V.Kudirkos"
+    },
+    "1060": {
+        "long": "25,252126",
+        "lat": "54,666555",
+        "street": "Naugarduko - G.Vilties"
+    },
+    "1061": {
+        "long": "25,254552",
+        "lat": "54,666268",
+        "street": "Panerių - Burbiškių"
+    },
+    "1063": {
+        "long": "25,272112",
+        "lat": "54,758014",
+        "street": "Molėtų - Santaros"
+    },
+    "1064": {
+        "long": "25,281167",
+        "lat": "54,75815",
+        "street": "Santariskių - Santaros"
+    },
+    "1065": {
+        "long": "25,280043",
+        "lat": "54,752435",
+        "street": "Santariškių 1A"
+    },
+    "1066": {
+        "long": "25,228338",
+        "lat": "54,716553",
+        "street": "Rygos - Taikos (\"Maxim\")"
+    },
+    "1067": {
+        "long": "25,256747",
+        "lat": "54,714124",
+        "street": "Gelvonų perėja"
+    },
+    "1068": {
+        "long": "25,28269",
+        "lat": "54,722986",
+        "street": "Kalvarijų - Kazlausko"
+    },
+    "1069": {
+        "long": "25,292711",
+        "lat": "54,712339",
+        "street": "Verkių - Lukšio"
+    },
+    "107": {
+        "long": "25,267855",
+        "lat": "54,687589",
+        "street": "V.Kudirkos - Pamėnkalnio - J.Jasinskio"
+    },
+    "1070": {
+        "long": "25,304856",
+        "lat": "54,711292",
+        "street": "Žirmūnų - Lukšio"
+    },
+    "1071": {
+        "long": "25,307119",
+        "lat": "54,676797",
+        "street": "Drujos - Višinskio - Subačiaus"
+    },
+    "1072": {
+        "long": "25,411414",
+        "lat": "54,688383",
+        "street": "Parko - Pergalės"
+    },
+    "1073": {
+        "long": "25,422229",
+        "lat": "54,685555",
+        "street": "Parko perėja"
+    },
+    "1076": {
+        "long": "25,278978",
+        "lat": "54,733753",
+        "street": "Kalvarijų g. 294 perėja"
+    },
+    "108": {
+        "long": "25,264855",
+        "lat": "54,684128",
+        "street": "V.Kudirkos - Z.Sierakausko"
+    },
+    "109": {
+        "long": "25,264941",
+        "lat": "54,682382",
+        "street": "V.Kudirkos - M.K.Čiurlionio"
+    },
+    "110": {
+        "long": "25,265356",
+        "lat": "54,681353",
+        "street": "švitrigailos  -J.Basanavičiaus"
+    },
+    "111": {
+        "long": "25,266922",
+        "lat": "54,679228",
+        "street": "Švitrigailos - Vivulskio"
+    },
+    "112": {
+        "long": "25,267428",
+        "lat": "54,67753",
+        "street": "Švitrigailos - Ševčenkos"
+    },
+    "113": {
+        "long": "25,268576",
+        "lat": "54,674419",
+        "street": "Švitrigailos - Naugarduko"
+    },
+    "114": {
+        "long": "25,269438",
+        "lat": "54,671885",
+        "street": "Švitrigailos - Kauno"
+    },
+    "115": {
+        "long": "25,270424",
+        "lat": "54,669398",
+        "street": "Švitrigailos - Panerių"
+    },
+    "116": {
+        "long": "25,272823",
+        "lat": "54,665813",
+        "street": "Dariaus ir Girėno - Pelesos"
+    },
+    "117": {
+        "long": "25,273365",
+        "lat": "54,663125",
+        "street": "Dariaus ir Girėno - Brolių"
+    },
+    "118": {
+        "long": "25,273557",
+        "lat": "54,661446",
+        "street": "Dariaus ir Girėno - Šaltkalvių"
+    },
+    "119": {
+        "long": "25,271271",
+        "lat": "54,652144",
+        "street": "Dariaus ir Girėno - Eišiškių"
+    },
+    "120": {
+        "long": "25,273353",
+        "lat": "54,646262",
+        "street": "Dariaus ir Girėno g. (perėja)"
+    },
+    "121": {
+        "long": "25,273942",
+        "lat": "54,643098",
+        "street": "Dariaus ir Girėno - F.Vaitkaus"
+    },
+    "151": {
+        "long": "25,263649",
+        "lat": "54,688193",
+        "street": "Jasinskio g. (ties mokykla)"
+    },
+    "152": {
+        "long": "25,264313",
+        "lat": "54,677074",
+        "street": "Vytenio - Ševčenkos"
+    },
+    "153": {
+        "long": "25,259179",
+        "lat": "54,67025",
+        "street": "Žemaitės- Naugarduko, Kauno-Smolensko"
+    },
+    "154": {
+        "long": "25,257769",
+        "lat": "54,669457",
+        "street": "Naugarduko g. ties PC \"Maxima\""
+    },
+    "155": {
+        "long": "25,263318",
+        "lat": "54,670721",
+        "street": "Kauno g. (suaugusiųjų mok.)"
+    },
+    "156": {
+        "long": "25,266418",
+        "lat": "54,671306",
+        "street": "Kauno - Vytenio"
+    },
+    "201": {
+        "long": "25,280065",
+        "lat": "54,692064",
+        "street": "Kalvarijų - Žvejų - Upės"
+    },
+    "202": {
+        "long": "25,281024",
+        "lat": "54,693434",
+        "street": "Kalvarijų - Juozapavičiaus"
+    },
+    "203": {
+        "long": "25,281791",
+        "lat": "54,694711",
+        "street": "Kalvarijų - Konstitucijos"
+    },
+    "204": {
+        "long": "25,28189",
+        "lat": "54,697043",
+        "street": "Kalvarijų - Krokuvos"
+    },
+    "205": {
+        "long": "25,282925",
+        "lat": "54,70037",
+        "street": "Kalvarijų - Kalvarijų turgus"
+    },
+    "206": {
+        "long": "25,283827",
+        "lat": "54,703784",
+        "street": "Kalvarijų - Žalgirio"
+    },
+    "207": {
+        "long": "25,288146",
+        "lat": "54,703429",
+        "street": "žalgirio - Rinktinės- Tuskulenų"
+    },
+    "209": {
+        "long": "25,2842",
+        "lat": "54,705461",
+        "street": "Kalvarijų perėja prie vid. mokyklos"
+    },
+    "210": {
+        "long": "25,285623",
+        "lat": "54,708713",
+        "street": "Kalvarijų - Apkasų"
+    },
+    "211": {
+        "long": "25,286798",
+        "lat": "54,713437",
+        "street": "Kalvarijų - Lukšio"
+    },
+    "213": {
+        "long": "25,286839",
+        "lat": "54,715057",
+        "street": "Kalvarijų - Kareivių- Ozo"
+    },
+    "214": {
+        "long": "25,286637",
+        "lat": "54,717228",
+        "street": "Kalvarijų - Gerulaičio"
+    },
+    "215": {
+        "long": "25,294898",
+        "lat": "54,717209",
+        "street": "Kareivių - Verkių"
+    },
+    "216": {
+        "long": "25,302507",
+        "lat": "54,720324",
+        "street": "Zirmūnų - Kareivių"
+    },
+    "217": {
+        "long": "25,308221",
+        "lat": "54,72404",
+        "street": "Kareivių - Valakupių tiltas"
+    },
+    "218": {
+        "long": "25,299883",
+        "lat": "54,71885",
+        "street": "Kareivių g. ties degaline"
+    },
+    "219": {
+        "long": "25,303665",
+        "lat": "54,719057",
+        "street": "Žirmūnų 87 perėja"
+    },
+    "251": {
+        "long": "25,279399",
+        "lat": "54,695061",
+        "street": "Konstitucijos- Lvovo"
+    },
+    "252": {
+        "long": "25,275177",
+        "lat": "54,696171",
+        "street": "Konstitucijos (ties Europa)"
+    },
+    "253": {
+        "long": "25,27124",
+        "lat": "54,697484",
+        "street": "Konstitucijos 21"
+    },
+    "254": {
+        "long": "25,267682",
+        "lat": "54,698237",
+        "street": "Konstitucijos - Linkmenų"
+    },
+    "255": {
+        "long": "25,262795",
+        "lat": "54,701632",
+        "street": "Ukmergės - Geležinio Vilko"
+    },
+    "256": {
+        "long": "25,266192",
+        "lat": "54,704039",
+        "street": "Žalgirio - Geležinio Vilko"
+    },
+    "257": {
+        "long": "25,270795",
+        "lat": "54,704707",
+        "street": "Žalgirio - Linkmenų"
+    },
+    "258": {
+        "long": "25,276094",
+        "lat": "54,704286",
+        "street": "Žalgirio - Kernavės"
+    },
+    "259": {
+        "long": "25,279939",
+        "lat": "54,703991",
+        "street": "Žalgirio - Giedraičių"
+    },
+    "260": {
+        "long": "25,284375",
+        "lat": "54,721999",
+        "street": "Kalvarij ų- Žvalgų"
+    },
+    "261": {
+        "long": "25,290805",
+        "lat": "54,708106",
+        "street": "Apkasų - Ulonų; Ulonų - Žukausko"
+    },
+    "262": {
+        "long": "25,286107",
+        "lat": "54,710133",
+        "street": "Kalvarijų - Treinio"
+    },
+    "301": {
+        "long": "25,286082",
+        "lat": "54,68596",
+        "street": "Gedimino - Šventaragio"
+    },
+    "302": {
+        "long": "25,288038",
+        "lat": "54,68826",
+        "street": "Arsenalo - Žygimantų - Vrublevskio"
+    },
+    "303": {
+        "long": "25,294445",
+        "lat": "54,689274",
+        "street": "Kosciuškos g. pesciųjų perėja"
+    },
+    "304": {
+        "long": "25,298447",
+        "lat": "54,690849",
+        "street": "Kosciuškos - Sluškų"
+    },
+    "306": {
+        "long": "25,308016",
+        "lat": "54,696064",
+        "street": "Antakalnio - Sapiegos"
+    },
+    "308": {
+        "long": "25,309084",
+        "lat": "54,700338",
+        "street": "Antakalnio 33"
+    },
+    "309": {
+        "long": "25,30973",
+        "lat": "54,702786",
+        "street": "Antakalnio 35"
+    },
+    "310": {
+        "long": "25,310211",
+        "lat": "54,704001",
+        "street": "Antakalnio 37"
+    },
+    "311": {
+        "long": "25,3106",
+        "lat": "54,70502",
+        "street": "Antakalnio - Šilo"
+    },
+    "312": {
+        "long": "25,304503",
+        "lat": "54,705665",
+        "street": "Žirmūnų - Minties"
+    },
+    "313": {
+        "long": "25,311693",
+        "lat": "54,706749",
+        "street": "Antakalnio - Tramvajų"
+    },
+    "314": {
+        "long": "25,313392",
+        "lat": "54,70885",
+        "street": "Antakalnio - Klinikų"
+    },
+    "315": {
+        "long": "25,314956",
+        "lat": "54,711729",
+        "street": "Antakalnio - Žolyno"
+    },
+    "317": {
+        "long": "25,315615",
+        "lat": "54,713877",
+        "street": "Antakalnio- Švyturio"
+    },
+    "318": {
+        "long": "25,3159",
+        "lat": "54,714972",
+        "street": "Antakalnio - Širvio"
+    },
+    "319": {
+        "long": "25,316514",
+        "lat": "54,716696",
+        "street": "Antakalnio - Tverečiaus"
+    },
+    "320": {
+        "long": "25,317128",
+        "lat": "54,718827",
+        "street": "Antakalnio - Oginskio"
+    },
+    "321": {
+        "long": "25,317906",
+        "lat": "54,720699",
+        "street": "Antakalnio ties Universitetine ligonine"
+    },
+    "351": {
+        "long": "25,288432",
+        "lat": "54,689581",
+        "street": "Rinktinės - Olimpiečių - Žvejų"
+    },
+    "352": {
+        "long": "25,289296",
+        "lat": "54,691999",
+        "street": "Rinktinės - Juozapavičiaus"
+    },
+    "353": {
+        "long": "25,288315",
+        "lat": "54,694728",
+        "street": "Rinktinės - Šeimyniškių"
+    },
+    "354": {
+        "long": "25,284982",
+        "lat": "54,694398",
+        "street": "Šeimyniškių ties Slucko g."
+    },
+    "355": {
+        "long": "25,304503",
+        "lat": "54,69072",
+        "street": "Olandų g. ties Vilniaus technikos kolegija"
+    },
+    "356": {
+        "long": "25,304323",
+        "lat": "54,70407",
+        "street": "Žirmūnų pard.\"Birutė\""
+    },
+    "357": {
+        "long": "25,320989",
+        "lat": "54,723865",
+        "street": "Nemencinės - žirgo"
+    },
+    "358": {
+        "long": "25,326169",
+        "lat": "54,726886",
+        "street": "Nemenčinės - Saulėtekio al."
+    },
+    "401": {
+        "long": "25,26289",
+        "lat": "54,68081",
+        "street": "J. Basanavičiaus- Vytenio"
+    },
+    "402": {
+        "long": "25,260233",
+        "lat": "54,680051",
+        "street": "Konarskio - Basanavičiaus"
+    },
+    "403": {
+        "long": "25,255012",
+        "lat": "54,677399",
+        "street": "Savanorių - Kedrų"
+    },
+    "404": {
+        "long": "25,251257",
+        "lat": "54,675487",
+        "street": "Žemaitės - Savanorių - Pietario"
+    },
+    "405": {
+        "long": "25,248868",
+        "lat": "54,677057",
+        "street": "Konarskio - Pietario"
+    },
+    "406": {
+        "long": "25,248627",
+        "lat": "54,674114",
+        "street": "Savanorių (prie Maximos)"
+    },
+    "407": {
+        "long": "25,24582",
+        "lat": "54,672669",
+        "street": "Savanorių (perėja prie stotelės)"
+    },
+    "408": {
+        "long": "25,24323",
+        "lat": "54,671326",
+        "street": "Savanorių - Gerosios Vilties"
+    },
+    "409": {
+        "long": "25,240314",
+        "lat": "54,67323",
+        "street": "Geležinio Vilko - Gerosios Vilties"
+    },
+    "410": {
+        "long": "25,240579",
+        "lat": "54,669975",
+        "street": "Savanorių (perėja)"
+    },
+    "411": {
+        "long": "25,235986",
+        "lat": "54,663718",
+        "street": "Savanorių - Vilkpėdės"
+    },
+    "412": {
+        "long": "25,232975",
+        "lat": "54,659202",
+        "street": "Savanorių - Riovonių"
+    },
+    "413": {
+        "long": "25,216465",
+        "lat": "54,649825",
+        "street": "Savanorių (prie Plastos)"
+    },
+    "414": {
+        "long": "25,205856",
+        "lat": "54,644283",
+        "street": "Savanorių - Vaduvos"
+    },
+    "415": {
+        "long": "25,257941",
+        "lat": "54,678896",
+        "street": "Savanorių 6"
+    },
+    "451": {
+        "long": "25,254087",
+        "lat": "54,673625",
+        "street": "žemaitės - Eglių"
+    },
+    "501": {
+        "long": "25,272884",
+        "lat": "54,690308",
+        "street": "Vasario 16 - šermukšnių"
+    },
+    "502": {
+        "long": "25,272182",
+        "lat": "54,688409",
+        "street": "Vasario 16 - Gedimino"
+    },
+    "503": {
+        "long": "25,275088",
+        "lat": "54,687891",
+        "street": "Gedimino - Jakšto"
+    },
+    "504": {
+        "long": "25,271685",
+        "lat": "54,687134",
+        "street": "Vasario 16 - Pamėnkalnio"
+    },
+    "505": {
+        "long": "25,27459",
+        "lat": "54,685998",
+        "street": "Pamėnkalnio - Stulginskio"
+    },
+    "506": {
+        "long": "25,27711",
+        "lat": "54,684508",
+        "street": "Pylimo - Pamėnkalnio - Jogailos"
+    },
+    "507": {
+        "long": "25,273316",
+        "lat": "54,682651",
+        "street": "Mindaugo - Kalinausko - Tauro"
+    },
+    "508": {
+        "long": "25,277311",
+        "lat": "54,682838",
+        "street": "Pylimo - Palangos - Kalinausko"
+    },
+    "509": {
+        "long": "25,277249",
+        "lat": "54,68188",
+        "street": "Pylimo - Klaipėdos"
+    },
+    "510": {
+        "long": "25,272647",
+        "lat": "54,680883",
+        "street": "Mindaugo - Basanavičiaus"
+    },
+    "511": {
+        "long": "25,2778",
+        "lat": "54,679888",
+        "street": "Pylimo - Basanavičiaus- Trakų"
+    },
+    "512": {
+        "long": "25,273544",
+        "lat": "54,678439",
+        "street": "Mindaugo - ševčenkos (perėja prie Maximos)"
+    },
+    "513": {
+        "long": "25,279347",
+        "lat": "54,678151",
+        "street": "Pylimo - Naugarduko"
+    },
+    "515": {
+        "long": "25,280406",
+        "lat": "54,677148",
+        "street": "Pylimo - Ligoninės"
+    },
+    "516": {
+        "long": "25,27431",
+        "lat": "54,676392",
+        "street": "Mindaugo - Naugarduko"
+    },
+    "517": {
+        "long": "25,274769",
+        "lat": "54,674995",
+        "street": "Mindaugo - šaltinių"
+    },
+    "518": {
+        "long": "25,283252",
+        "lat": "54,675528",
+        "street": "Pylimo - šv. Stepono - Rūdininkų"
+    },
+    "519": {
+        "long": "25,285044",
+        "lat": "54,674296",
+        "street": "Pylimo - Sodų"
+    },
+    "520": {
+        "long": "25,289566",
+        "lat": "54,674068",
+        "street": "Aušros vartų - Bazilijonų - Daukšos"
+    },
+    "521": {
+        "long": "25,293187",
+        "lat": "54,67485",
+        "street": "Daukšos - Vilniaus Senamiesčio vid. mokykla"
+    },
+    "522": {
+        "long": "25,275629",
+        "lat": "54,672684",
+        "street": "Mindaugo - Kauno"
+    },
+    "523": {
+        "long": "25,277994",
+        "lat": "54,672794",
+        "street": "Kauno - Aguonų"
+    },
+    "524": {
+        "long": "25,279946",
+        "lat": "54,672429",
+        "street": "Kauno - Šv. Stepono - Šopeno"
+    },
+    "525": {
+        "long": "25,282647",
+        "lat": "54,671967",
+        "street": "Šopeno - Sodų"
+    },
+    "551": {
+        "long": "25,269586",
+        "lat": "54,681707",
+        "street": "Basanavičiaus - Algirdo"
+    },
+    "552": {
+        "long": "25,270858",
+        "lat": "54,678032",
+        "street": "Algirdo - Ševčenkos"
+    },
+    "553": {
+        "long": "25,271768",
+        "lat": "54,675513",
+        "street": "Algirdo - Naugarduko"
+    },
+    "554": {
+        "long": "25,27283",
+        "lat": "54,672469",
+        "street": "Kauno - Algirdo"
+    },
+    "555": {
+        "long": "25,290324",
+        "lat": "54,672172",
+        "street": "Geležinkelio - Aušros vartų - Liepkalnio"
+    },
+    "556": {
+        "long": "25,273703",
+        "lat": "54,669982",
+        "street": "Panerių - Algirdo"
+    },
+    "601": {
+        "long": "25,258714",
+        "lat": "54,698779",
+        "street": "-"
+    },
+    "602": {
+        "long": "25,253553",
+        "lat": "54,699423",
+        "street": "Narbuto (pesčiųjų perėja)"
+    },
+    "603": {
+        "long": "25,243396",
+        "lat": "54,699366",
+        "street": "Narbuto - Sėlių"
+    },
+    "605": {
+        "long": "25,247683",
+        "lat": "54,698476",
+        "street": "Sėlių (ties IKI)"
+    },
+    "606": {
+        "long": "25,250528",
+        "lat": "54,694899",
+        "street": "Kęstučio - Latvių"
+    },
+    "607": {
+        "long": "25,251842",
+        "lat": "54,690006",
+        "street": "Kęstučio - Mickevičiaus"
+    },
+    "608": {
+        "long": "25,256454",
+        "lat": "54,6904",
+        "street": "Vytauto - Mickevičiaus"
+    },
+    "609": {
+        "long": "25,25642",
+        "lat": "54,689052",
+        "street": "Liubarto - Vytauto"
+    },
+    "610": {
+        "long": "25,259938",
+        "lat": "54,690425",
+        "street": "Gedimino - Goštauto"
+    },
+    "701": {
+        "long": "25,264353",
+        "lat": "54,695064",
+        "street": "Goštauto - Gynėjų"
+    },
+    "702": {
+        "long": "25,264882",
+        "lat": "54,693567",
+        "street": "Gynėjų - Lukiškių"
+    },
+    "721": {
+        "long": "25,255993",
+        "lat": "54,696291",
+        "street": "Sėlių - Saltoniškių"
+    },
+    "740": {
+        "long": "25,278154",
+        "lat": "54,713091",
+        "street": "Ozo g. (ties Licejumi, ties PC \"Ozas\")"
+    },
+    "741": {
+        "long": "25,257325",
+        "lat": "54,71109",
+        "street": "Ozo - Gelvonų"
+    },
+    "742": {
+        "long": "25,249108",
+        "lat": "54,710137",
+        "street": "Ozo - Ukmergės"
+    },
+    "743": {
+        "long": "25,245193",
+        "lat": "54,709826",
+        "street": "Ozo g. ( Sofijos Kovalevskajos mok.)"
+    },
+    "744": {
+        "long": "25,240354",
+        "lat": "54,708912",
+        "street": "Ozo - Buivydiškių- ąžuolyno"
+    },
+    "761": {
+        "long": "25,222155",
+        "lat": "54,699463",
+        "street": "Laisvės - Narbuto"
+    },
+    "762": {
+        "long": "25,224554",
+        "lat": "54,703433",
+        "street": "Laisvės - Justiniškių"
+    },
+    "763": {
+        "long": "25,226704",
+        "lat": "54,707272",
+        "street": "Laisvės - Viršuliškių"
+    },
+    "764": {
+        "long": "25,226272",
+        "lat": "54,709638",
+        "street": "Laisves - Ozo"
+    },
+    "765": {
+        "long": "25,227392",
+        "lat": "54,712081",
+        "street": "Laisves - Viršuliškių (prie bažnyčios)"
+    },
+    "766": {
+        "long": "25,230867",
+        "lat": "54,716132",
+        "street": "Laisves - Rygos"
+    },
+    "767": {
+        "long": "25,232489",
+        "lat": "54,719211",
+        "street": "Laisvės - Čiobiškio"
+    },
+    "768": {
+        "long": "25,233668",
+        "lat": "54,726223",
+        "street": "Laisvės - Žemynos"
+    },
+    "781": {
+        "long": "25,218835",
+        "lat": "54,703921",
+        "street": "Justiniškių - Viršuliškių skg."
+    },
+    "782": {
+        "long": "25,215591",
+        "lat": "54,706126",
+        "street": "Ozo - Justiniškių"
+    },
+    "783": {
+        "long": "25,217077",
+        "lat": "54,711211",
+        "street": "Justiniškių - Lūžių"
+    },
+    "784": {
+        "long": "25,221469",
+        "lat": "54,716992",
+        "street": "Justiniškių - Rygos"
+    },
+    "785": {
+        "long": "25,222757",
+        "lat": "54,721144",
+        "street": "Taikos - Justiniškių"
+    },
+    "786": {
+        "long": "25,214552",
+        "lat": "54,711767",
+        "street": "Taikos - Lūžių"
+    },
+    "787": {
+        "long": "25,224786",
+        "lat": "54,716678",
+        "street": "Rygos 8"
+    },
+    "801": {
+        "long": "25,244218",
+        "lat": "54,72112",
+        "street": "Ukmergės (ties \"Topo Centru\")"
+    },
+    "802": {
+        "long": "25,242485",
+        "lat": "54,724141",
+        "street": "Ukmergės perėja (ties poliklinika)"
+    },
+    "803": {
+        "long": "25,24317",
+        "lat": "54,722787",
+        "street": "Ukmergės (ties degaline)"
+    },
+    "821": {
+        "long": "25,245291",
+        "lat": "54,730598",
+        "street": "Ateities - Fabijoniskių"
+    },
+    "822": {
+        "long": "25,247983",
+        "lat": "54,731507",
+        "street": "Ateities (ties silpnaregiu centru)"
+    },
+    "823": {
+        "long": "25,253436",
+        "lat": "54,733624",
+        "street": "Ateities - Stanevičiaus"
+    },
+    "824": {
+        "long": "25,25887",
+        "lat": "54,735294",
+        "street": "Ateities - Didlaukio"
+    },
+    "825": {
+        "long": "25,265881",
+        "lat": "54,736916",
+        "street": "Ateities - Baltupio"
+    },
+    "826": {
+        "long": "25,270776",
+        "lat": "54,738409",
+        "street": "Ateities - Maumedžių, Ateities - Bitininkų"
+    },
+    "828": {
+        "long": "25,276732",
+        "lat": "54,739266",
+        "street": "Kalvarijų - Ateities"
+    },
+    "829": {
+        "long": "25,277401",
+        "lat": "54,743538",
+        "street": "Jeruzalės - Braškių"
+    },
+    "830": {
+        "long": "25,278009",
+        "lat": "54,744876",
+        "street": "Jeruzalės - Mokyklos"
+    },
+    "831": {
+        "long": "25,273843",
+        "lat": "54,739151",
+        "street": "Ateities 4"
+    },
+    "841": {
+        "long": "25,186588",
+        "lat": "54,707224",
+        "street": "Vydūno - Papilėnų"
+    },
+    "842": {
+        "long": "25,179631",
+        "lat": "54,707294",
+        "street": "Vydūno - Įsruties, Vydūno - Tolminkiemio"
+    },
+    "861": {
+        "long": "25,333359",
+        "lat": "54,724276",
+        "street": "Saulėtekio al. (perėja ties Sauletekio al.9)"
+    },
+    "881": {
+        "long": "25,408001",
+        "lat": "54,69219",
+        "street": "Stepono Batoro - Dūmų"
+    },
+    "882": {
+        "long": "25,410638",
+        "lat": "54,692985",
+        "street": "Pramonės - Pergalės"
+    }
+}
