@@ -75,18 +75,23 @@ def fill_NAs(dfs, omit, num_method=None, cat_method=None, was_missing=True):
 
 def category_encode(dfs):
     dfs_out = [df.copy() for df in dfs]
+    mapping = {}
 
     for col in dfs_out[0].columns:
+        mapping[col] = {}
         if dfs_out[0][col].dtype == "object":
-            n = 1 
+            n = 1
             for val in set(dfs_out[0][col].to_list()):
+                mapping[col][val] = n
                 for df in dfs_out:
                     df[col] = df[col].apply(lambda x: n if x == val else x)
                 n += 1
     
+    
+              
     print("Done.")
     
-    return dfs_out
+    return dfs_out, mapping
 
 
 def one_hot_encode(dfs, card_thresh):
