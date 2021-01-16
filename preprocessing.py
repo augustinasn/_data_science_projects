@@ -19,25 +19,26 @@ def match_cols(df1, df2, omit):
     return df1_out
 
 
-def shuffle_rows(dfs):
+def shuffle_rows(dfs, verbose=True):
     out_dfs = []
     for i, df in enumerate(dfs):
         out_df = df.copy()
         out_df = out_df.sample(frac=1)
-        print(f"{out_df.shape[0]} rows shuffled in df No.{i + 1}.")
-    
+        if verbose:
+            print(f"{out_df.shape[0]} rows shuffled in df No.{i + 1}.")
     return dfs
 
 
-def drop_cols(dfs, cols):
+def drop_cols(dfs, cols, verbose=True):
     out_dfs = []
     for df in dfs:
         out_df = df.copy()
         for col in cols:
             out_df = out_df.drop(col, axis=1)
         out_dfs.append(out_df)
-    print("Done.")
-
+    if verbose:
+        print("Done.")
+        
     return out_dfs
 
 
@@ -74,28 +75,41 @@ def fill_NAs(dfs, omit, num_method=None, cat_method=None, was_missing=True, verb
             
     return out_dfs
 
-def category_encode(dfs):
+         
+def drop_NAs(dfs, labels, axis, verbose=True):
+    shape_before = {k: f"{v.shape[0]}*{v.shape[1]}" for k, v in zip(labels, dfs)}
+    dfs_out = [df.copy() for df in dfs]
+    for i, df in enumerate(dfs_out):
+        dfs_out[i] = df.dropna(axis=axis)
+    shape_after = {k: f"{v.shape[0]}*{v.shape[1]}" for k, v in zip(labels, dfs_out)}
+    
+    if verbose:
+        print("Before:")
+        pretty_print_dict(shape_before)
+        print("After:")
+        pretty_print_dict(shape_after)    
+    
+    return dfs_out
+              
+def category_encode(dfs, verbose=True):
     dfs_out = [df.copy() for df in dfs]
     mapping = {}
-
     for col in dfs_out[0].columns:
-        mapping[col] = {}
         if dfs_out[0][col].dtype == "object":
+            mapping[col] = {}
             n = 1
             for val in set(dfs_out[0][col].to_list()):
                 mapping[col][val] = n
                 for df in dfs_out:
                     df[col] = df[col].apply(lambda x: n if x == val else x)
-                n += 1
-    
-    
-              
-    print("Done.")
+                n += 1    
+    if verbose:
+        pretty_print_dict(mapping)
     
     return dfs_out, mapping
 
 
-def one_hot_encode(dfs, card_thresh):
+def one_hot_encode(dfs, card_thresh, verbose=True):
     dfs_out = [df.copy() for df in dfs]
         
     for col in dfs_out[0].columns:
@@ -107,13 +121,14 @@ def one_hot_encode(dfs, card_thresh):
     
     dfs_out = [df[[col for col in df.columns if df[col].dtype != "object"]] for df in dfs_out]
     
-    print("Done.")
+    if verbose:
+        print("Done.")
     
     return dfs_out
 
 
-def split_df(df, target, train_n=None, train_p=None):
-    in_df = shuffle_rows([df])[0]
+def split_df(df, target, train_n=None, train_p=None, verbose=True):
+    in_df = shuffle_rows(dfs=[df], verbose=verbose)[0]
     
     if train_n:
         train = in_df.iloc[:train_n]
@@ -127,6 +142,7 @@ def split_df(df, target, train_n=None, train_p=None):
     valid_y = valid[target]
     valid_X = valid.drop(target, axis=1)
     
-    print("Shapes of the outputs:", train_X.shape, train_y.shape, valid_X.shape, valid_y.shape)
+    if verbose:
+        print("Shapes of the outputs:", train_X.shape, train_y.shape, valid_X.shape, valid_y.shape)
     
     return train_X, train_y, valid_X, valid_y
