@@ -25,18 +25,16 @@ def score_regr(m, X_train, y_train, X_valid, y_valid):
     
 def score_class(m, X_train, y_train, X_valid, y_valid):
     index = ["Jacquard Score (%)",
-             "True Positives (% of all positives)",
-             "True Negatives (% of all negatives)",
-             "False Positives (% of all positives)",
-             "False Negatives (% of all negatives)",
              "Precision (What proportion of positive identifications was actually correct?)",
-             "Recall (What proportion of actual positives was identified correctly?)"]
+             "Recall (What proportion of actual positives was identified correctly?)",
+             "F1",
+             "ROC AUC"]
 
     out_df = pd.DataFrame(columns=["Train", "Valid"], index=index)
     
     for X, y, label in zip([X_train, X_valid], [y_train, y_valid], ["Train", "Valid"]):
         preds = m.predict(X)
-
+        preds_proba = m.predict_proba(X)        
         jacquard_score = sum(preds == y) / len(preds)
         true_positives = sum([ True for i, j in zip(preds, y) if (i == 1 and j == 1) ]) / sum(preds)
         true_negatives = sum([ True for i, j in zip(preds, y) if (i == 0 and j == 0) ]) / (len(preds) - sum(preds))
@@ -44,13 +42,19 @@ def score_class(m, X_train, y_train, X_valid, y_valid):
         false_negatives = sum([ True for i, j in zip(preds, y) if (i == 0 and j == 1) ]) / (len(preds) - sum(preds))
         precision = true_positives / (true_positives + false_positives)
         recall = true_positives / (true_positives + false_negatives)
+        f1 = 2 * (precision * recall) / (precision + recall)
+        roc_auc = roc_auc_score(y, m.predict_proba(X)[:, 1])
 
-        scores = [jacquard_score, true_positives, true_negatives, false_positives, false_negatives, precision, recall]
+
+        scores = [jacquard_score, precision,
+                  recall, f1, roc_auc]
 
         for i, score in zip(index, scores):
             out_df.loc[i, label] = score
 
     print_df(out_df, -1)
+    
+    return index, scores
 
 
 def score_with_cols_dropped(m, cols, X_train, X_valid, y_train, y_valid):
