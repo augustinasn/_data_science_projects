@@ -41,7 +41,7 @@ def drop_cols(dfs, cols):
     return out_dfs
 
 
-def fill_NAs(dfs, omit, num_method=None, cat_method=None, was_missing=True):
+def fill_NAs(dfs, omit, num_method=None, cat_method=None, was_missing=True, verbose=True):
     # fyi: values for numerical column na filling are determined from the first df.
     num_methods = {"median": (lambda x: x.median()),
                    "mean": (lambda x: x.mean())}
@@ -69,8 +69,9 @@ def fill_NAs(dfs, omit, num_method=None, cat_method=None, was_missing=True):
                     num_val = 0
                 df[col] = df[col].fillna(num_val)
                 
-    print("Done.")
-                
+    if verbose:
+        print("Done.")
+            
     return out_dfs
 
 def category_encode(dfs):
