@@ -1,6 +1,20 @@
 from cornelia.imports import *
 
 
+def pretty_print_dict(d, tabs=0):
+    try:
+        for k, v in d.items():
+            print(tabs * "\t", k)
+            if type(v) is dict:
+                pretty_print_dict(v, tabs + 1)
+            elif type(v) in [list, set, tuple]:
+                for i in v:
+                    print((tabs + 1) * "\t", i)
+            else:
+                print((tabs + 1) * "\t", v)
+    except Exception as e:
+        print(e)
+
 def print_df(df, rows):
     if rows == -1:
         display(HTML(df.to_html()))
