@@ -70,20 +70,36 @@ def plot_data(dfs, labels, bench, n_bins):
             ax.set_title(f"{l}=>{col}", fontdict={"fontsize":12,
                                                   "fontweight": "medium"})
 
-# def distributions(dfs, labels, n_bins, unique_thresh, target):
-#     dfs_copy = [df.copy() for df in dfs]
-#     for df, la in zip(dfs_copy, labels):
-#         for col in df.columns:
-#             if df[col].nunique() < unique_thresh:
-#                 df[f"{col}_"] = df[col]
-#                 groupby = df[[col, target, f"{col}_"]].groupby([col, target]).count() 
-#             else:
-#                 df[f"{col}_bins"] = pd.qcut(df[col],
-#                                             q=n_bins,
-#                                             duplicates="drop")
+def plot_distributions(df, target, n_bins):    
+    cols = [col for col in df.columns if (("was_missing" not in col) and ("=>" not in col) and (col != target))]    
 
-#                 groupby = df[[f"{col}_bins", col, target]].groupby([f"{col}_bins", target]).count() 
+    fig, axes = plt.subplots(len(cols), 1, figsize=(15, len(cols) * 7))
+    fig.subplots_adjust(wspace=0.1,
+                        hspace=0.5)
+    
+    for col, ax in zip(cols, axes):
+        out_df = df[[col, target]].copy().dropna(axis=0).sort_values(by=[col])
+        
+        if df[col].dtype == "object" or df[col].nunique() <= 15:
+            x = out_df[col].unique()
+            y = out_df[[col, target]].groupby(col).sum()[target]
+            style = "o-r"
+            
+        else:
+            out_df[f"{col}_bin"] = pd.qcut(out_df[col],
+                                           q=n_bins,
+                                           duplicates="drop")
+            x = out_df[f"{col}_bin"].astype(str).unique()
+            y = out_df[[f"{col}_bin", target]].groupby(f"{col}_bin").sum()[target].to_list()
+            style = ".-b"
+        
+        ax.plot(x, y, style)
+    
+        for xy in zip(x, y):                                       
+            ax.annotate(xy[0],
+                        xy=xy,
+                        textcoords="data")
 
-#             if groupby.shape[0] != 0:
-#                 print(f"Distribution of \"{col}\" for \"{la}\":")
-#                 print_df(groupby, -1)
+        ax.xaxis.set_major_formatter(plt.NullFormatter())
+        ax.set_title(f"{col}", fontdict={"fontsize":12,
+                                         "fontweight": "medium"})
