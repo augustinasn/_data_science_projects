@@ -1,7 +1,7 @@
 from cornelia.imports import *
 
 
-def pretty_print_dict(d, tabs=0):
+def pretty_print_iterable(d, tabs=0):
     try:
         for k, v in d.items():
             print(tabs * "\t", k)
@@ -13,7 +13,11 @@ def pretty_print_dict(d, tabs=0):
             else:
                 print((tabs + 1) * "\t", v)
     except Exception as e:
-        print(e)
+        try:
+            for i in d:
+                print(tabs * "\t", i)
+        except Exception as e:
+            print(e)
 
 def print_df(df, rows):
     if rows == -1:
