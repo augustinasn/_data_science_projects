@@ -19,6 +19,8 @@ def pretty_print_iterable(d, tabs=0):
         except Exception as e:
             print(e)
 
+pretty_print_dict = pretty_print_iterable
+
 def print_df(df, rows):
     if rows == -1:
         display(HTML(df.to_html()))
