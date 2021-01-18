@@ -1,3 +1,5 @@
+<img src='https://images.unsplash.com/photo-1530124566582-a618bc2615dc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'/>
+
 # Data Science Utilities (codename "Cornelia")
 
 <table>
@@ -11,6 +13,19 @@
 ## Demo
 Here is a working live demo :  https://iharsh234.github.io/WebApp/
 
+## Installation
+
+OS X & Linux:
+
+```sh
+npm install my-crazy-module --save
+```
+## Usage example
+
+A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+
+_For more examples and usage, please refer to the [Wiki][wiki]._
+
 ## Built with 
 
 - [jQuery - Ajax](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
@@ -21,27 +36,10 @@ Here is a working live demo :  https://iharsh234.github.io/WebApp/
 
 MIT © [Augustinas Naina](https://github.com/augustinasn)
 
-
-## Installation
-
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
-
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
-
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+[Augustinas Naina](https://www.linkedin.com/in/augustinasn/) – augustinasnaina@gmail.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
+Cover photo by <a href='https://unsplash.com/@neonbrand'>NeONBRAND</a>
