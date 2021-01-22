@@ -1,5 +1,8 @@
 from cornelia.imports import *
 from cornelia.visualization import print_df
+from cornelia.preprocessing import *
+from cornelia.extraction import *
+from cornelia.helpers import *
 
 def feature_importance(m, df, print_rows=10, to_keep_threshold=0):
     fi = pd.DataFrame({"feature_name": df.columns,
@@ -7,7 +10,10 @@ def feature_importance(m, df, print_rows=10, to_keep_threshold=0):
                                                                           ascending=False).reset_index(drop=True)
     print_df(fi, print_rows)
     
-    return fi[fi["importance"] < to_keep_threshold]["feature_name"].to_list()
+    to_drop = fi[fi["importance"] < to_keep_threshold]["feature_name"].to_list()
+    to_keep = [c for c in df.columns if c not in to_drop]
+    
+    return to_drop, to_keep
 
 def rmse(x, y):
     return math.sqrt(((x - y)**2).mean())
@@ -136,37 +142,39 @@ def pdps(model, data, target, omit, clusters):
                  feature=feature,
                  clusters=clusters)
 
+        
+# Example configs for pipeline:
+#
+# config_1 = {"sample": [0.2, 0.5],
+#             "nas": {"mode": "fill",
+#                     "params": {"num_method": ["median", "mean", "mode"],
+#                                "cat_method": ["mode", None],
+#                                "was_missing": [True, False]}},
+#             "drop_cols": [["a", "b", "c"],
+#                           ["a", "b"]],
+#             "categoricals": {"mode": "category_encode"},
+#             "split": [0.5, 0.7, 0.9],
+#             "prediction": {"model": "rf",
+#                            "params": {"n_estimators": [50, 75, 100, 150],
+#                                       "max_samples": [50_000, 100_000, 250_000],
+#                                       "max_features": [0.7, 0.8, 0.9],
+#                                       "min_samples_leaf": [1, 3, 5]}}}
 
-config_1 = {"sample": [0.2, 0.5],
-            "nas": {"mode": "fill",
-                    "params": {"num_method": ["median", "mean", "mode"],
-                               "cat_method": ["mode", None],
-                               "was_missing": [True, False]}},
-            "drop_cols": [["a", "b", "c"],
-                          ["a", "b"]],
-            "categoricals": {"mode": "category_encode"},
-            "split": [0.5, 0.7, 0.9],
-            "prediction": {"model": "rf",
-                           "params": {"n_estimators": [50, 75, 100, 150],
-                                      "max_samples": [50_000, 100_000, 250_000],
-                                      "max_features": [0.7, 0.8, 0.9],
-                                      "min_samples_leaf": [1, 3, 5]}}}
-
-config_2 = {"sample": [0.2, 0.5],
-            "nas": {"mode": "drop",
-                    "params": {"axis": [0, 1]}},
-            "drop_cols": [["a", "b", "c"],
-                          ["a", "b"]],
-            "categoricals": {"mode": "one_hot_encode",
-                             "params": {"card_threshold": [15]}},
-            "split": [0.5, 0.7, 0.9],
-            "prediction": {"model": "rf",
-                           "params": {"n_estimators": [50, 75, 100, 150],
-                                      "max_samples": [50_000, 100_000, 250_000],
-                                      "max_features": [0.7, 0.8, 0.9],
-                                      "min_samples_leaf": [1, 3, 5]}
-                           }
-            }
+# config_2 = {"sample": [0.2, 0.5],
+#             "nas": {"mode": "drop",
+#                     "params": {"axis": [0, 1]}},
+#             "drop_cols": [["a", "b", "c"],
+#                           ["a", "b"]],
+#             "categoricals": {"mode": "one_hot_encode",
+#                              "params": {"card_threshold": [15]}},
+#             "split": [0.5, 0.7, 0.9],
+#             "prediction": {"model": "rf",
+#                            "params": {"n_estimators": [50, 75, 100, 150],
+#                                       "max_samples": [50_000, 100_000, 250_000],
+#                                       "max_features": [0.7, 0.8, 0.9],
+#                                       "min_samples_leaf": [1, 3, 5]}
+#                            }
+#             }
 
 
 class Pipeline:
@@ -199,7 +207,7 @@ class Pipeline:
                        self.config["prediction"]["params"].get("max_samples", None),
                        self.config["prediction"]["params"].get("max_features", 'auto'),
                        self.config["prediction"]["params"].get("min_samples_leaf", 1)]
-
+        
         self.labels = ["sample", "nas_mode", "nas_fill_num_method", "nas_fill_cat_method",
                        "nas_fill_was_missing", "nas_drop_axis", "drop_cols", "categoricals_mode",
                        "categoricals_one_hot_encode_card_thresh", "split",
@@ -208,14 +216,14 @@ class Pipeline:
         
         self.params = [[i] if not isinstance(i, list) else i for i in self.params]
         self.param_sets = list(itertools.product(*self.params))
-        
-    def feature_importance(self):
+                
+    def feature_importance(self, to_keep_threshold):
         train_X, train_y, valid_X, valid_y = self.last_input
         
         fi_cols_to_drop = feature_importance(m=self.last_m,
                                              df=train_X,
                                              print_rows=15,
-                                             to_keep_threshold=0.01)
+                                             to_keep_threshold=to_keep_threshold)
         return fi_cols_to_drop
     
     def colinear_features(self):
@@ -223,11 +231,22 @@ class Pipeline:
         similiar_features(train_X)
 
     
-    def scores(self):
-        archive = pd.read_csv("./tmp/.scores",
+    def scores(self, last_n=-1):
+        try:
+            archive = pd.read_csv("./tmp/.scores",
                               sep=";")
+            if last_n == -1:
+                print_df(archive, last_n)
+            else:
+                print_df(archive.tail(last_n), -1)
+        except:
+            print("There's no score file.")
         
-        print_df(archive, -1)
+    def clear_score(self):
+        try:
+            os.remove("./tmp/.scores")
+        except:
+            pass
         
     def run(self):
         for i, ps in enumerate(self.param_sets):
@@ -271,7 +290,7 @@ class Pipeline:
                 print("\t\t # mode: one_hot_encode;")
                 print(f"\t\t # cardinality threshold: {ps[8]};")
                 train_df, test_df = one_hot_encode(dfs=[train_df, test_df],
-                                                        card_thresh=ps[7],
+                                                        card_thresh=ps[8],
                                                         verbose=False)
             # Drop columns:
             if ps[6]:
@@ -283,7 +302,7 @@ class Pipeline:
                                                    verbose=False)
             # Split data:
             print("\t - Train/validation split:")
-            print(f"\t\t # {int(ps[9] * 100)}/{int((1 - ps[9]) * 100)}")
+            print(f"\t\t # {round(ps[9] * 100, 0)}/{round((1 - ps[9]) * 100, 0)}")
             train_X, train_y, valid_X, valid_y = split_df(df=train_df,
                                                           target=self.target,
                                                           train_p=ps[9],
@@ -322,8 +341,5 @@ class Pipeline:
             with open(fp, "a") as fh:
                 fh.write(";".join([str(i) if not isinstance(i, list) else ",".join([str(j) for j in i]) for i in ps] + [str(s) for s in scores]) + os.linesep)
                 
-            self.last_input = [train_X, test_X, valid_X, valid_y]
+            self.last_input = [train_X, valid_X, valid_X, valid_y]
             self.last_m = m
-    
-
-
