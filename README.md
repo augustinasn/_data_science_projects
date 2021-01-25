@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td>
-      "Cornelia" is a collection of Python scripts that aids user in various tasks in the data science process.
+      "Cornelia" is a collection of Python scripts that aids user in various tasks in data science process.
     </td>
   </tr>
 </table>
