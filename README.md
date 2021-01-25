@@ -1,13 +1,25 @@
-<img src='https://images.unsplash.com/photo-1495592822108-9e6261896da8'/>
+<img src='http://drive.google.com/uc?export=view&id=1Y4MoXstn6_6J-8sSYX_SIxXJx02t4i6Z'/>
 
 # Data Science Projects (Monorepo)
 
-Purpose of this monorepository is to bundle all of my data science projects
-and keep them separate from other other topics like cybersecurity, web development,
-etc. Each branch of this repository is a standalone project, Additionally - you can refer to branch topics
-for a more thoutough grouping of projects. 
+<table>
+  <tr>
+    <td>
+      Purpose of this monorepository is to bundle all of my data science projects
+      and keep them separate from other topics like cybersecurity, web development,
+      etc. Each branch of this repository is a standalone project, Additionally - you can refer to branch topics
+      for a more thoutough grouping of projects, topics include, but are not limited to:
+      <ul>
+        <li>Web scrapers;</li>
+        <li>Data munging;</li>
+        <li>EDA (ML-based & classic);</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ## Meta:
 
-Augustinas Naina - augustinasnaina@gmail.com
-Cover image by <a href='https://unsplash.com/@pietrozj'>Pietro Jeng</a>
+- Author - Augustinas Naina ([email](augustinasnaina@gmail.com), [LinkedIn](https://www.linkedin.com/in/augustinasn/));
+- License - [MIT](https://github.com/augustinasn/_data_science_projects/blob/master/LICENSE);
+- Cover image by <a href='https://unsplash.com/@pietrozj'>Pietro Jeng</a>
