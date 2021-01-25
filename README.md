@@ -1,45 +1,33 @@
-<img src='https://images.unsplash.com/photo-1530124566582-a618bc2615dc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'/>
-
 # Data Science Utilities (codename "Cornelia")
 
 <table>
-<tr>
-<td>
-  A webapp using Quandl API to display history of stock growth in a given period of time. It helps predict the growth of stocks from the  charts of stock performace in any period of time. It helps to judge stocks, with the principle of momentum investing, which returns 1% per month on average.
-</td>
-</tr>
+  <tr>
+    <td>
+      "Cornelia" is a collection of Python scripts that aids user in various tasks in the data science process.
+    </td>
+  </tr>
 </table>
 
-## Demo
-Here is a working live demo :  https://iharsh234.github.io/WebApp/
+## Demo:
 
-## Installation
+A working demo can be seen in my "SEB Big data challenge" project - https://github.com/augustinasn/_data_science_projects/blob/toai-c-seb-loan-default-prediction/Notebook.ipynb
 
-OS X & Linux:
+## Installation:
 
-```sh
-npm install my-crazy-module --save
+Pip:
+
 ```
-## Usage example
+pip install -r requirements.txt
+```
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+## Built with:
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+- [Python](https://www.python.org) - Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace;
+- [Pandas](https://pandas.pydata.org) - In computer programming, pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
+- [Matplotlib](https://matplotlib.org) - Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+.
+- [Scikit-learn](https://scikit-learn.org/stable/) - Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, etc...
 
-## Built with 
+## Meta:
 
-- [jQuery - Ajax](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
-- [Google Chart API](https://developers.google.com/chart/interactive/docs/quick_start) - Free , Rich Gallery , Customizable and Cross-browser compatible.
-- [Bootstrap](http://getbootstrap.com/) - Extensive list of components and  Bundled Javascript plugins.
-
-## [License](https://github.com/iharsh234/WebApp/blob/master/LICENSE.md)
-
-MIT © [Augustinas Naina](https://github.com/augustinasn)
-
-## Meta
-
-[Augustinas Naina](https://www.linkedin.com/in/augustinasn/) – augustinasnaina@gmail.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-Cover photo by <a href='https://unsplash.com/@neonbrand'>NeONBRAND</a>
+- Author - Augustinas Naina ([email](mailto:augustinasnaina@gmail.com), [LinkedIn](https://www.linkedin.com/in/augustinasn/));
+- License - [GPL v3](https://github.com/augustinasn/_data_science_projects/blob/master/LICENSE);
