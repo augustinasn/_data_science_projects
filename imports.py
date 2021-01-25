@@ -14,3 +14,6 @@ from IPython.display import display, HTML
 from scipy.cluster import hierarchy as hc
 from pdpbox import pdp
 from pathlib import Path
+
+from sklearn.ensemble import RandomForestClassifier
+from xgboost.sklearn import XGBClassifier
