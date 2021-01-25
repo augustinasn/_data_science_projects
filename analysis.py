@@ -191,7 +191,6 @@ class Pipeline:
         self.last_input = list()
         self.last_m = None 
         
-        
     def validate_input(self):
         self.params = [self.config["sample"],
                        self.config["nas"]["mode"],
