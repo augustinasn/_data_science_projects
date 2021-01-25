@@ -232,10 +232,14 @@ class Pipeline:
         similiar_features(train_X)
 
     
-    def scores(self, last_n=-1):
+    def scores(self, last_n=-1, sort_by=False):
         try:
             archive = pd.read_csv("./tmp/.scores",
                               sep=";")
+            
+            if sort:
+                archive = archive.sort_values(by=sort_by,
+                                              ascending=False)
             if last_n == -1:
                 print_df(archive, last_n)
             else:
