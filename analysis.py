@@ -238,8 +238,8 @@ class Pipeline:
                               sep=";")
             
             if sort:
-                archive = archive.sort_values(by=sort_by,
-                                              ascending=False)
+                archive = archive.sort_values(by=sort_by)
+                
             if last_n == -1:
                 print_df(archive, last_n)
             else:
