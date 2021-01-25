@@ -28,4 +28,4 @@ pip install -r requirements.txt
 ## Meta:
 
 - Author - Augustinas Naina ([email](mailto:augustinasnaina@gmail.com), [LinkedIn](https://www.linkedin.com/in/augustinasn/));
-- License - [GPL v3](https://github.com/augustinasn/_data_science_projects/blob/master/LICENSE);
+- License - [GPL v3](https://github.com/augustinasn/_data_science_projects/blob/master/LICENSE).
