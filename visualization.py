@@ -1,4 +1,8 @@
 from cornelia.imports import *
+from cornelia.preprocessing import *
+from cornelia.extraction import *
+from cornelia.helpers import *
+from cornelia.analysis import *
 
 
 def pretty_print_iterable(d, tabs=0):
