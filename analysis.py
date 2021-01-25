@@ -1,5 +1,5 @@
 from cornelia.imports import *
-from cornelia.visualization import print_df
+from cornelia.visualization import *
 from cornelia.preprocessing import *
 from cornelia.extraction import *
 from cornelia.helpers import *
