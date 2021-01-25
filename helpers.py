@@ -1,4 +1,8 @@
 from cornelia.imports import *
+from cornelia.visualization import *
+from cornelia.preprocessing import *
+from cornelia.extraction import *
+from cornelia.analysis import *
 
 def display_opts(decimal_numbers=3,
                  max_rows=None,
