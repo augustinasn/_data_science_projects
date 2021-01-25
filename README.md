@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td>
-      This project is a blank template with predefined steps of data science project integrated with scripts from my ["cornelia"](https://github.com/augustinasn/_data_science_projects/tree/cornelia) project.
+      This project is a blank template with predefined steps of data science project integrated with scripts from my "cornelia" project - https://github.com/augustinasn/_data_science_projects/tree/cornelia
     </td>
   </tr>
 </table>
