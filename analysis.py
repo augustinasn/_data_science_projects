@@ -4,10 +4,6 @@ from cornelia.preprocessing import *
 from cornelia.extraction import *
 from cornelia.helpers import *
 
-from sklearn.ensemble import RandomForestClassifier
-from xgboost.sklearn import XGBClassifier
-
-
 def feature_importance(m, df, print_rows=10, to_keep_threshold=0):
     fi = pd.DataFrame({"feature_name": df.columns,
                        "importance": m.feature_importances_}).sort_values("importance",
