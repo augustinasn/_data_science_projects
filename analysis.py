@@ -190,7 +190,7 @@ def pdps(model, data, target, omit, clusters):
 
 
 class Pipeline:
-    def __init__(self, t, config, train_df, test_df, target, backup=False):
+    def __init__(self, config, train_df, test_df, target, backup=False, type="classification"):
         self.t = t
         self.config = config
         self.raw_train_df = train_df
@@ -358,7 +358,7 @@ class Pipeline:
             if self.t == "classification":
                 score_labels, scores = score_class(m, train_X, train_y, valid_X, valid_y)
             elif self.t == "regression":
-                score_labels, scores = score
+                score_labels, scores = score_regr(m, train_X, train_y, valid_X, valid_y)
 
             # Archive the result:
             fp = "./tmp/.scores"
