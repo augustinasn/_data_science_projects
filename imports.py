@@ -16,4 +16,5 @@ from pdpbox import pdp
 from pathlib import Path
 
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestRegressor
 from xgboost.sklearn import XGBClassifier
