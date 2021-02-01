@@ -20,15 +20,26 @@ def rmse(x, y):
     return math.sqrt(((x - y)**2).mean())
 
 def score_regr(m, X_train, y_train, X_valid, y_valid):
+    
+    index = ["RMSE (Train)",
+             "RMSE (Valid)",
+             "R^2 (Train)",
+             "R^2 (Valid)"]
+ 
     res = [rmse(m.predict(X_train), y_train), 
            rmse(m.predict(X_valid), y_valid), 
            m.score(X_train, y_train),         
            m.score(X_valid, y_valid)]         
     
     if hasattr(m, "oob_score_"):
-        res.append(m.oob_score_)
-        
-    print(res)
+        index += ["OOB"]
+        res += [m.oob_score_]
+     
+    out_df = pd.DataFrame(columns=index)
+    out_df.iloc[0] = res
+    
+    print_df(out_df, -1)
+    return index, scores
     
 def score_class(m, X_train, y_train, X_valid, y_valid):
     index = ["Jacquard Score (%)",
@@ -179,7 +190,8 @@ def pdps(model, data, target, omit, clusters):
 
 
 class Pipeline:
-    def __init__(self, config, train_df, test_df, target, backup=False):
+    def __init__(self, t, config, train_df, test_df, target, backup=False):
+        self.t = t
         self.config = config
         self.raw_train_df = train_df
         self.raw_test_df = test_df
@@ -311,6 +323,12 @@ class Pipeline:
                                                           target=self.target,
                                                           train_p=ps[9],
                                                           verbose=False)
+            # Adjust according to the prediction type:
+            if self.t == "regression":
+                clf = RandomForestRegressor
+            elif self.t == "classification":
+                clf = RandomForestClassifier
+            
             # Train model:
             print("\t - Prediction:")
             if self.config["prediction"]["model"] == "rf":
@@ -319,12 +337,15 @@ class Pipeline:
                 print(f"\t\t # max_samples - {ps[12]};")
                 print(f"\t\t # max_features - {ps[13]};")
                 print(f"\t\t # min_samples_leaf - {ps[14]};")
+                
+                
 
-                m = RandomForestClassifier(n_estimators=ps[11],
-                                           max_samples=ps[12],
-                                           max_features=ps[13],
-                                           min_samples_leaf=ps[14],
-                                           n_jobs=-1)
+                m = clf(n_estimators=ps[11],
+                        max_samples=ps[12],
+                        max_features=ps[13],
+                        min_samples_leaf=ps[14],
+                        n_jobs=-1)
+                
                 m.fit(train_X, train_y)
 
             # Backup model:
@@ -334,7 +355,10 @@ class Pipeline:
             
             # Score model:
             print("\t - Score:")
-            score_labels, scores = score_class(m, train_X, train_y, valid_X, valid_y)
+            if self.t == "classification":
+                score_labels, scores = score_class(m, train_X, train_y, valid_X, valid_y)
+            elif self.t == "regression":
+                score_labels, scores = score
 
             # Archive the result:
             fp = "./tmp/.scores"
