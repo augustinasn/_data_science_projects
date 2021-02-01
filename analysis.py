@@ -349,5 +349,5 @@ class Pipeline:
             self.last_m = m
             
             if submission:
-                result = m.predict_proba(test_df)
+                result = np.argmax(m.predict_proba(test_df), axis=1)
                 return result
