@@ -252,7 +252,7 @@ class Pipeline:
         except:
             pass
         
-    def run(self):
+    def run(self, submission=False):
         for i, ps in enumerate(self.param_sets):
             print(f"\nSub-iteration {i + 1}/{len(self.param_sets)}:")
             
@@ -260,7 +260,7 @@ class Pipeline:
             print("\t - Sample:")
             print(f"\t\t # {int(ps[0] * 100)}% of the training/testing data.")
             train_df = self.raw_train_df.copy().sample(frac=ps[0])
-            test_df = self.raw_test_df.copy().sample(frac=ps[0])
+            test_df = self.raw_test_df.copy() #.sample(frac=ps[0])
                         
             # NANs:
             print("\t - NaNs:")
@@ -335,15 +335,19 @@ class Pipeline:
             # Score model:
             print("\t - Score:")
             score_labels, scores = score_class(m, train_X, train_y, valid_X, valid_y)
-            
+
             # Archive the result:
             fp = "./tmp/.scores"
             if not os.path.isfile(fp):
                 with open("./tmp/.scores", "w+") as fh:
                     fh.write(";".join(self.labels + score_labels) + os.linesep)
-                    
+
             with open(fp, "a") as fh:
                 fh.write(";".join([str(i) if not isinstance(i, list) else ",".join([str(j) for j in i]) for i in ps] + [str(s) for s in scores]) + os.linesep)
-                
+                               
             self.last_input = [train_X, valid_X, valid_X, valid_y]
             self.last_m = m
+            
+            if submission:
+                result = m.predict_proba(test_df)
+                return result
