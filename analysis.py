@@ -190,7 +190,7 @@ def pdps(model, data, target, omit, clusters):
 
 
 class Pipeline:
-    def __init__(self, config, train_df, test_df, target, backup=False, type="classification"):
+    def __init__(self, config, train_df, test_df, target, backup=False, t="classification"):
         self.t = t
         self.config = config
         self.raw_train_df = train_df
