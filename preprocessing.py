@@ -1,9 +1,4 @@
 from cornelia.imports import *
-from cornelia.visualization import *
-from cornelia.extraction import *
-from cornelia.helpers import *
-from cornelia.analysis import *
-
 
 def match_cols(df1, df2, omit):           
     cols = list(df2.columns)
