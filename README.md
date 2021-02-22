@@ -8,7 +8,7 @@
 </table>
 
 ## Demo:
-- A working demo can be seen by opening the Notebook.ipynb in the GitHub window - https://github.com/augustinasn/_data_science_projects/blob/multinomial_logistic_regression_from_scratch/From%20scratch.ipynb
+- A working demo can be seen by opening the Notebook.ipynb in the GitHub window - https://github.com/augustinasn/_data_science_projects/blob/multinomial_logistic_regression_from_scratch/Notebook.ipynb
 
 ## Installation:
 ```
